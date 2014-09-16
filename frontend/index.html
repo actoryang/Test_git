@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html ng-app="y710">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X_UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Y710</title>
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
+</head>
+
+<body>
+    <!-- navbar -->
+    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <a class="navbarp-brand" href='/'>Y710</a>
+            </div>
+            <ul class="nav navbar-nav">
+                <li><a href="/">Home</a></li>
+            </ul>
+
+            <ul class="nav navbar navbar-right">
+                <li><a href="#/login/">登录</a></li>
+                <li><a href="#/signup">注册</a></li>
+            </ul>
+
+            <ul class="nav navbar navbar-right">
+                <li><a href="#/logout">注销</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div ng-view class="body_content" style="margin-top: 65px"></div>
+
+    <script type="text/javascript" src="libs/angular.min.js"></script>
+    <script type="text/javascript" src="libs/angular-route.min.js"></script>
+    <script type="text/javascript" src="app.js"></script>
+    <script type="text/javascript" src="controllers/signup.js"></script>
+    <script type="text/javascript" src="controllers/login.js"></script>
+</body>
+</html>
